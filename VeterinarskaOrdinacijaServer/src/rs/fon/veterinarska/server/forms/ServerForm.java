@@ -244,7 +244,8 @@ public class ServerForm extends javax.swing.JFrame {
         try {
             res = ServerController.odgovoriKlijentu(req);    
         } catch(Exception ex) {
-            System.out.println("greska");
+            ex.printStackTrace();
+            return;
         }
         
         List<VrstaZivotinje> lista = (List<VrstaZivotinje>)res.getResponse();
