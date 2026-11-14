@@ -26,7 +26,7 @@ public class ServerController {
             case Operations.VRATI_LISTU_SVIH_VRSTA_ZIVOTINJA:
                 System.out.println("dosao do slucaja");
                 SOVratiListuSvihVrstaZivotinja so = 
-                        new SOVratiListuSvihVrstaZivotinja(new DBConnectionFactory("jdbc:mysql://localhost:3306/veterinarska_ordinacija", "root", "Luma2410#"));
+                        new SOVratiListuSvihVrstaZivotinja(new DBConnectionFactory("jdbc:mysql://192.168.1.106:3306/veterinarska_ordinacija", "root", "ProSoft2026"));
                 System.out.println("Parametar je " + req.getParameter());
                 so.execute(null);
                 
